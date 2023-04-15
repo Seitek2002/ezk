@@ -6,3 +6,9 @@ burgerBtn.addEventListener("click", () => {
     burger.classList.toggle("active");
     document.body.classList.toggle("active");
 })
+
+const lang = document.querySelector(".header__block div")
+
+lang.addEventListener("click", () => {
+    lang.classList.toggle("active")
+})

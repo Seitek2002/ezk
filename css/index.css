@@ -127,28 +127,45 @@ button {
   display: flex;
   align-items: center;
   gap: 50px;
+  position: relative;
 }
-.header__block div {
+.header__block div:first-child {
   display: flex;
   align-items: center;
   gap: 16px;
   cursor: pointer;
+}
+.header__block .lang-active {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  display: none;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4.8px 30px rgba(0, 0, 0, 0.15);
+}
+.header__block .lang-option {
+  cursor: pointer;
+}
+.header__block div.active:first-child ~ .lang-active {
+  display: block;
 }
 .header button {
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
   padding: 11px 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   box-sizing: border-box;
-  background: #49A7EB;
+  background: #49a7eb;
   border-radius: 10px;
   transition: 0.3s;
   border: 3px solid rgba(69, 68, 154, 0.2);
 }
 .header button:hover {
   background: transparent;
-  color: #49A7EB;
+  color: #49a7eb;
 }
 .header ul {
   display: flex;
